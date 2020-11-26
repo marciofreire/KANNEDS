@@ -98,7 +98,7 @@ print("\nDate and time =", datetime.now().strftime("%m/%d/%Y %H:%M:%S"))
 strDate = datetime.now().strftime("_%Y%m%d_%H%M%S")
 
 # Read the original files
-filesPath = 'Data/CSV/'
+filesPath = ''
 fileSufix = 'SAMPLE_DATA'
 fileDescription = 'Database Sample for sepsis early detection'
 
@@ -224,17 +224,4 @@ for indVar in range(1,numVarsGroups):
 print('\n**********THE END**********')
 K.clear_session()
 
-# Save results file
-fileName = "Results/res_summary_lstm_" + fileSufix + strDate + ".csv"
-f = open(fileName,"w")
-numHRBefStr = np.str(numHRBef)
-f.write("Variables," + numHRBefStr + "\r")
-
-for i in range(0, numVarsGroups-1):
-    lineStr = np.str(summary[i][1]) + ','
-    for j in range(i,len(summary),numVarsGroups-1):
-        lineStr = lineStr + np.str(summary[j][2]) + ','
-    lineStr = lineStr[0:len(lineStr)-1]   
-    f.write("%s\r" %lineStr)
-f.close()
 
