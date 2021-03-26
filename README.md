@@ -4,9 +4,9 @@ These are the LSTM Neural Network source code and sample dataset of the KANNEDS 
 
 The code uses the files below and shows the accuracies of the LSTM neural network with the Kinematics Features (KF) as input and with Vital Signs (VS) as input:
 -	KANNEDS_NEGATIVES_SAMPLE_DATA.csv
-o	Sample dataset containing 1000 patients negative for sepsis
+o	Sample dataset containing 700 patients negative for sepsis
 -	KANNEDS_POSITIVES_SAMPLE_DATA.csv
-o	Sample dataset containing 1000 patients positive for sepsis
+o	Sample dataset containing 500 patients positive for sepsis
 -	KANNEDS_VARIABLES.csv
 o	A table containing the clinical variables used.
 
