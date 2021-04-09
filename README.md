@@ -8,6 +8,6 @@ The code uses the files below and shows a 5-fold cross validation of the LSTM ne
 -	KANNEDS_VARIABLES_FINAL.csv: Table containing the clinical variables used.
    
 To run the code, please proceed as follow:
-1.	Download the files and put them in the same folder;
+1.	Download the files keeping the folder Input;
 2.	Install a Python v3.6.9 environment with Keras v2.2.4 and Tensorflow v1.12 packages;
 3.	Run the Python code. 
